@@ -23,7 +23,8 @@ Jei pasirenkate nenuskaityti failo prašoma:
     - Leidžiama tik 'a' ar 'p' renkantis naudotojo/atsitiktinį pažymių suvedimą
 
 ### Rezultato pavyzdys:
-<img width="539" alt="image" src="https://user-images.githubusercontent.com/113300842/193150352-8a90d52a-98d7-4507-94f7-0b81d7f7277a.png">
+
+<img width="539" alt="image" src="https://user-images.githubusercontent.com/113300842/193151842-9a8141af-8317-4ebe-87d8-944ac4d46bd3.png">
 
 
 
