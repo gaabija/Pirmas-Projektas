@@ -1,8 +1,17 @@
 # Pirmas-Projektas
-## V.02
+## V.03
 C++ programa skirta išvesti galutinius balus norimam studentų skaičiui.
 
-Šioje versijoje v.01 papildytas galimybe duomenis imti iš nuskaitomo failo, pridėtas klaidos jei failas neatsidarė sugavimas, failas išskaidytas į .h bei .cpp failus, lengvesniam skaitomumui.
+Šioje versijoje nauja: 
+- Galimybė generuoti norimo dydžio studentų įrašų failus 
+- Studentų įrašai surūšiuojami pagal balą į dvi kategorijas ir išvedami į du skirtingus failus
+- Atliekama programos veikimo greičio (spartos) analizė:
+    -failų kūrimui;
+    -duomenų nuskaitymui iš failų;
+    -studentų rūšiavimui į dvi grupes/kategorijas;
+    -surūšiuotų studentų išvedimui į du naujus failus.
+
+
 
 ### Naudojimas:
 Paleidus programą bus prašoma:
@@ -23,7 +32,7 @@ Jei pasirenkate nenuskaityti failo prašoma:
     - Leidžiama tik 'a' ar 'p' renkantis naudotojo/atsitiktinį pažymių suvedimą
 
 ### Rezultato pavyzdys:
-<img width="539" alt="image" src="https://user-images.githubusercontent.com/113300842/193150352-8a90d52a-98d7-4507-94f7-0b81d7f7277a.png">
+
 
 
 
