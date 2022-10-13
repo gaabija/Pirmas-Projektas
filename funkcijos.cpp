@@ -138,6 +138,7 @@ void FailoGeneravimas() {
   cout << "Ar norite kad galutinis balas butu isvedamas pagal viduki? 'v' Ar norite kad butu isvedamas pagal mediana? 'm' )  ";
   char arVidurkis;
   char budasIsvesti;
+  string name;
   while (true) {
     cin >> arVidurkis;
     arVidurkis = tolower(arVidurkis);
@@ -150,28 +151,24 @@ void FailoGeneravimas() {
   } else if (arVidurkis == 'm') {
     budasIsvesti = 'm';
   }
-   cout << "-------------------------------------------------------------------------" << endl;
-  string name;
-  int studentuSkaiciai[5] = {
-    100,
-    1000,
-    10000,
-    100000,
-    1000000
-  };
+   cout << "-------------------------------------------------------------" << endl;
 
   vector < Irasas > studentai;
   vector < Irasas > geresnioBalo;
   vector < Irasas > zemesnioBalo;
 
-  for (int i: studentuSkaiciai) {
-    int nStudentu = i;
+  //cout << "Iveskite norimo generuoti studentu skaičių: "<<endl;
+    int nStudentu=1000;
+    //nStudentu= SkIvedimas();
+  for(int i=1; i<=5; i++){
     DuomenuGeneravimas(nStudentu, nPazymiu);
     FailoDuomenuGavimas(studentai, nStudentu, nPazymiu);
     Grupavimas(nStudentu, studentai,
       geresnioBalo, zemesnioBalo, budasIsvesti);
     Spausdinimas(nStudentu, geresnioBalo, zemesnioBalo);
-  }
+      nStudentu=nStudentu*10;
+    }
+  
 }
 
 void DuomenuGeneravimas(int & nStudentu, int & nPazymiu) {
@@ -264,7 +261,7 @@ void Spausdinimas(int nStudentu,
   auto end = std::chrono::high_resolution_clock::now();
   std::chrono::duration < double > diff = end - start;
   cout << to_string(nStudentu) << " irasu grupiu irasymo i failus laikas: " << diff.count() << " s\n";
-  cout << "-------------------------------------------------------------------------" << endl;
+     cout << "-------------------------------------------------------------" << endl;
 }
 int SkIvedimas() {
   int sk;
