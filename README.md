@@ -6,10 +6,10 @@ C++ programa skirta išvesti galutinius balus norimam studentų skaičiui.
 - Galimybė generuoti norimo dydžio studentų įrašų failus 
 - Studentų įrašai surūšiuojami pagal balą į dvi kategorijas ir išvedami į du skirtingus failus
 - Atliekama programos veikimo greičio (spartos) analizė:
-    -failų kūrimui;
-    -duomenų nuskaitymui iš failų;
-    -studentų rūšiavimui į dvi grupes/kategorijas;
-    -surūšiuotų studentų išvedimui į du naujus failus.
+    - failų kūrimui
+    - duomenų nuskaitymui iš failų
+    - studentų rūšiavimui į dvi grupes/kategorijas
+    - surūšiuotų studentų išvedimui į du naujus failus
 
 
 
