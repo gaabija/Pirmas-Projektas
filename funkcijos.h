@@ -57,6 +57,6 @@ void FailoDuomenuGavimas(vector < Irasas > & studentai, int nStudentu, int nPazy
 void Grupavimas(int nStudentu, vector < Irasas > & studentai,
   vector < Irasas > & geresnioBalo, vector < Irasas > & zemesnioBalo, char budasIsvesti);
 void Spausdinimas(int nStudentu,
-  const vector < Irasas > & geresnioBalo,
-    const vector < Irasas > & zemesnioBalo);
+   vector < Irasas > & geresnioBalo,
+     vector < Irasas > & zemesnioBalo);
 #endif
