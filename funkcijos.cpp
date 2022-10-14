@@ -241,8 +241,8 @@ void Grupavimas(int nStudentu, vector < Irasas > & studentai,
 }
 
 void Spausdinimas(int nStudentu,
-  const vector < Irasas > & geresnioBalo,
-    const vector < Irasas > & zemesnioBalo) {
+ vector < Irasas > & geresnioBalo,
+     vector < Irasas > & zemesnioBalo) {
   string zemesniuName = "ZemesnioBalo" + to_string(nStudentu) + ".txt";
   ofstream zemesn(zemesniuName);
   string geresniuName = "GeresnioBalo" + to_string(nStudentu) + ".txt";
@@ -254,10 +254,12 @@ void Spausdinimas(int nStudentu,
     zemesn << temp.vardas << " " << temp.pavarde << " " <<
       fixed << setprecision(2) << temp.galut << endl;
   }
+  sort(zemesnioBalo.begin(), zemesnioBalo.end(), Lyginimas);
   for (const auto & temp: geresnioBalo) {
     geresn << temp.vardas << " " << temp.pavarde << " " << fixed << setprecision(2) <<
       temp.galut << endl;
   }
+  sort(geresnioBalo.begin(), geresnioBalo.end(), Lyginimas);
   auto end = std::chrono::high_resolution_clock::now();
   std::chrono::duration < double > diff = end - start;
   cout << to_string(nStudentu) << " irasu grupiu irasymo i failus laikas: " << diff.count() << " s\n";
