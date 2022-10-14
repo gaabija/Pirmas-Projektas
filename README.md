@@ -37,7 +37,8 @@ Jei pasirenkate negeneruoti failo prašoma:
 - Ivedus pažymius rankomis
 <img width="253" alt="image" src="https://user-images.githubusercontent.com/113300842/195715872-0b732e41-bbe9-495c-9c1b-ef1e6eda8270.png">
 - Greičio analizė generuojant failą
-<img width="339" alt="image" src="https://user-images.githubusercontent.com/113300842/195710808-c33100c6-401d-4992-b8bc-54af7f58f9e6.png">
+<img width="353" alt="image" src="https://user-images.githubusercontent.com/113300842/195781990-b280cf2b-9496-40f9-a0a5-23003cd3f300.png">
+
 
 
 
