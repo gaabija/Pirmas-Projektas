@@ -152,16 +152,9 @@ void Pagalbine() {
     budasIsvesti = 'm';
   }
 
-  //cout << "Iveskite norimo generuoti studentu skaičių: "<<endl;
-  // int nStudentu;
-  // nStudentu= SkIvedimas();
-  int studentuSkaiciai[5] = {
-    1000,
-    10000,
-    100000,
-    1000000,
-    10000000
-  };
+  cout << "Iveskite norimo generuoti studentu skaičių: "<<endl;
+  int nStudentu;
+  nStudentu= SkIvedimas();
 
   vector < Irasas > studentai;
   vector < Irasas > geresnioBalo;
@@ -171,8 +164,6 @@ void Pagalbine() {
   list < Irasas > geresnioBaloLIST;
   list < Irasas > zemesnioBaloLIST;
 
-  for (int i: studentuSkaiciai) {
-    int nStudentu = i;
     DuomenuGeneravimas(nStudentu, nPazymiu);
     FailoDuomenuGavimasVector(studentai, nStudentu, nPazymiu);
     GrupavimasVector(nStudentu, studentai, geresnioBalo, zemesnioBalo, budasIsvesti);
@@ -189,7 +180,7 @@ void Pagalbine() {
     zemesnioBalo.clear();
     cout << endl;
   }
-}
+
 
 void FailoDuomenuGavimasList(list < Irasas > & studentai, int nStudentu, int nPazymiu) {
   auto start = std::chrono::high_resolution_clock::now();
@@ -361,8 +352,6 @@ void SpausdinimasVector(int nStudentu,
   ofstream zemesn(zemesniuName);
   string geresniuName = "GeresnioBalo" + to_string(nStudentu) + ".txt";
   ofstream geresn(geresniuName);
-  sort(zemesnioBalo.begin(), zemesnioBalo.end(), Lyginimas);
-  sort(geresnioBalo.begin(), geresnioBalo.end(), Lyginimas);
   for (Irasas temp: zemesnioBalo) {
     zemesn << temp.vardas << " " << temp.pavarde << " " <<
       fixed << setprecision(2) << temp.galut << endl;
