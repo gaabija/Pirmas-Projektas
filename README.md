@@ -6,7 +6,7 @@ C++ programa skirta išvesti galutinius balus norimam studentų skaičiui.
 - Naudojamas ne tik vector bet ir list tipo konteineris studentų duomenims saugoti
 - Atliekama programos veikimo greičio (spartos) analizė vector ir list konteineriams:
     - duomenų nuskaitymui iš failų
-    - studentų grupavimui į dvi grupes/kategorijas (Geresnio balo (>=5) ir Zemesnio balo (<5) )
+    - studentų grupavimui į dvi grupes/kategorijas (Geresnio balo (>=5) ir žemesnio balo (<5) )
 
 ### Spartos analizė
 - AMD Ryzen 7 4800U with Radeon Graphics 1.80 GHz procesorius
