@@ -15,10 +15,10 @@ C++ programa skirta išvesti galutinius balus norimam studentų skaičiui.
 
 |        |             | 1000        | 10000       | 100000      | 1000000    | 10000000  |
 |--------|-------------|-------------|-------------|-------------|------------|-----------|
-| Vector | Nuskaitymas | 0.0110035 s | 0.0300065 s | 0.227064 s  | 1.57047 s  | 14.0227 s |
+| Vector | Nuskaitymas | 0.0007135 s | 0.0300065 s | 0.227064 s  | 1.57047 s  | 14.0227 s |
 |        | Grupavimas  | 0.0001457 s | 0.0070093 s | 0.0370165 s | 0.266047 s | 4.05196 s |
-| List   | Nuskaitymas | 0.0049827 s | 0.0329889 s | 0.340091 s  | 1.98044 s  | 22.2068 s |
-|        | Grupavimas  | 0.0010006 s | 0.0091896 s | 0.0970435 s | 0.595134 s | 7.26248 s |
+| List   | Nuskaitymas | 0.0019827 s | 0.0329889 s | 0.340091 s  | 1.98044 s  | 22.2068 s |
+|        | Grupavimas  | 0.0002106 s | 0.0091896 s | 0.0970435 s | 0.595134 s | 7.26248 s |
 
 ### Naudojimas:
 Paleidus programą bus prašoma:
