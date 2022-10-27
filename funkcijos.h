@@ -2,20 +2,16 @@
 #define FUNKCIJOS_H
 
 #include <iostream>
-
 #include <string>
-
 #include <iomanip>
-
 #include <algorithm>
-
 #include <fstream>
-
 #include <chrono>
-
 #include <vector>
-
 #include <numeric>
+#include <list>
+#include <iterator>
+#include <sstream>
 
 using std::cin;
 using std::cout;
@@ -31,6 +27,8 @@ using std::to_string;
 using std::fixed;
 using std::numeric_limits;
 using std::streamsize;
+using std::list;
+using std::stringstream;
 
 struct Irasas {
   string vardas;
@@ -41,7 +39,7 @@ struct Irasas {
 };
 
 int SkIvedimas();
-void FailoGeneravimas();
+void Pagalbine();
 void Duomenys(vector < Irasas > studentai);
 void Duomenys(vector < Irasas > studentai);
 void NaudotojoSuvedimas(Irasas & temp);
@@ -53,10 +51,17 @@ double Vidurkis(Irasas temp);
 double Mediana(Irasas temp);
 void Galutinis(Irasas & temp, char budasIsvesti);
 void DuomenuGeneravimas(int & nStudentu, int & nPazymiu);
-void FailoDuomenuGavimas(vector < Irasas > & studentai, int nStudentu, int nPazymiu);
-void Grupavimas(int nStudentu, vector < Irasas > & studentai,
+void FailoDuomenuGavimasVector(vector < Irasas > & studentai, int nStudentu, int nPazymiu);
+void GrupavimasVector(int nStudentu, vector < Irasas > & studentai,
   vector < Irasas > & geresnioBalo, vector < Irasas > & zemesnioBalo, char budasIsvesti);
-void Spausdinimas(int nStudentu,
-   vector < Irasas > & geresnioBalo,
+void SpausdinimasVector(int nStudentu,
+ vector < Irasas > & geresnioBalo,
      vector < Irasas > & zemesnioBalo);
+
+void FailoDuomenuGavimasList(list < Irasas > & studentai, int nStudentu, int nPazymiu);
+void GrupavimasList(int nStudentu, list < Irasas > & studentai,
+  list < Irasas > & geresnioBalo, list < Irasas > & zemesnioBalo, char budasIsvesti);
+void SpausdinimasList(int nStudentu,
+   list < Irasas > & geresnioBalo,
+     list < Irasas > & zemesnioBalo);
 #endif
