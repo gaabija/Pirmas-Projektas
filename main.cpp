@@ -11,7 +11,7 @@ int main() {
     } else break;
   }
   if (arGeneruoti == 'g') {
-    FailoGeneravimas();
+    Pagalbine();
   } else if (arGeneruoti == 'n') {
     vector < Irasas > studentai;
     studentai.reserve(10000);
