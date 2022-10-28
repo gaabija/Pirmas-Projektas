@@ -3,6 +3,7 @@
 C++ programa skirta išvesti galutinius balus norimam studentų skaičiui.
 
 Šioje versijoje nauja: 
+- Galimybė dirbti ne tik su vietoje generuojamu failu, bet ir su jau esančio failo nuskaitymu
 - Naudojamas ne tik vector bet ir list tipo konteineris studentų duomenims saugoti
 - Atliekama programos veikimo greičio (spartos) analizė vector ir list konteineriams:
     - duomenų nuskaitymui iš failų
