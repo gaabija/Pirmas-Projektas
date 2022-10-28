@@ -1,20 +1,20 @@
 #include "funkcijos.h"
 
 int main() {
-  cout << "Iveskite g jeigu norite generuoti faila arba n jei norite studentus ivesti patys: " << endl;;
+  cout << "Iveskite f jeigu norite dirbti su failu arba n jei norite studentus ivesti patys: " << endl;;
   char arGeneruoti;
   while (true) {
     cin >> arGeneruoti;
     arGeneruoti = tolower(arGeneruoti);
-    if (arGeneruoti != 'g' && arGeneruoti != 'n') {
-      cout << "Iveskite g arba n raidę: ";
+    if (arGeneruoti != 'f' && arGeneruoti != 'n') {
+      cout << "Iveskite f arba n raidę: ";
     } else break;
   }
-  if (arGeneruoti == 'g') {
+  if (arGeneruoti == 'f') {
     Pagalbine();
   } else if (arGeneruoti == 'n') {
     vector < Irasas > studentai;
-    studentai.reserve(10000);
+    studentai.reserve(1000);
     Duomenys(studentai);
     studentai.clear();
   }
