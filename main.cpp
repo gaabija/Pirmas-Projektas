@@ -7,7 +7,7 @@ int main() {
     cin >> arGeneruoti;
     arGeneruoti = tolower(arGeneruoti);
     if (arGeneruoti != 'f' && arGeneruoti != 'n') {
-      cout << "Iveskite f arba n raidę: ";
+      cout << "Iveskite f arba n raide: ";
     } else break;
   }
   if (arGeneruoti == 'f') {
@@ -21,4 +21,3 @@ int main() {
 
   return 0;
 }
-
